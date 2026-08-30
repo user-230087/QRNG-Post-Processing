@@ -1,0 +1,9 @@
+In 2025 Paper: 
+
+In 2025 paper total length of the input bits given was 8 x 10^5 bits. 
+The toeplitz multiplication was carried out in blocks of 40 working parallelly, each processing 10^3 bits and giving out 300 bits (m). 
+Since each block processes 1000 bits and there are 40 blocks, in a batch 4 x 10^4 bits are processed. This is carried out 20 times (since 8 x 10^5 / 4 x 10^4 = 20). 
+
+The main advantages I saw in this paper are reusability, higher clock speed, and parellelism. 
+
+So my doubt is if I apply the same logic for input size of 1520 bits, with batch size of n = 76, m = 52 with 20 batches working parellelly (so overall n = 1520; m ~ 1024; compression ratio ~ 67.4%), will it affect the quality of randomness of the extracted bits? 
